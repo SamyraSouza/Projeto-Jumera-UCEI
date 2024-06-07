@@ -1,0 +1,237 @@
+.card_SejaV-Doe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 250px;
+    width: 1400px;
+    margin: 80px auto;
+    color: #fff;
+    font-family: "Inter";
+}
+
+.cards {
+    text-align: center;
+}
+
+.card_foto {
+    position: relative;
+    width: 557px;
+    height: 776px;
+}
+
+.foto-texto {
+    width: 333px;
+    position: absolute;
+    z-index: 1;
+    bottom: 10%;
+    right: 18%;
+}
+
+.foto-texto h1 {
+    font-size: 44px;
+}
+
+.foto-texto p {
+    font-size: large;
+    margin-bottom: 100px;
+}
+
+.foto-texto button {
+    cursor: pointer;
+    border-radius: 60px;
+    border: 0px;
+    background-color: #456352;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 100;
+    height: 70px;
+    width: 250px;
+    margin-bottom: -50px;
+    transition: 500ms;
+}
+
+.foto-texto button:hover {
+    background-color: #7da890ab;
+    border: 0px;
+}
+
+.faixa {
+    width: 100%;
+    height: 240px;
+    background: linear-gradient(75deg, #b0c59a81 1%, #555f4a81 99%);
+    margin-top: -220px;
+    margin-bottom: 0;
+}
+
+.loja {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+    grid-gap: 40px 250px;
+}
+
+.loja_item {
+    margin: 40px 0;
+}
+
+.item-texto {
+    font-family: "inter";
+    font-size: x-large;
+    margin-bottom: 50px;
+}
+
+.item-texto p {
+    margin-bottom: 40px;
+}
+
+.item-texto a {
+    padding: 20px 150px;
+    border-radius: 30px;
+    font-size: 25px;
+    background-color: #456352;
+    text-decoration: none;
+    color: #fff;
+    transition: 200ms;
+}
+
+.item-texto a:hover {
+    background-color: #80AE91;
+    color: #0d1310;
+}
+
+#back1{
+    background-image: url(../imagens/img-lojinha/Group\ 20.svg);
+    background-repeat: no-repeat;
+    background-position-y: 876px;
+}
+
+#back2{
+    background-image: url(../imagens/img-lojinha/Group\ 21.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 2477px
+}
+
+@media screen and (max-width: 1400px) {
+    .card_SejaV-Doe {
+        display: block;
+        width: 557px;
+        margin: 80px auto;
+    }
+
+    .cards {
+        margin: 60px 0;
+    }
+
+    .loja {
+        display: block;
+    }
+
+    .loja_item {
+        margin: 60px 0;
+    }
+
+    .item-texto{
+        margin: 0;
+    }
+
+    #back1{
+        background-position-y: 1709px;
+    }
+
+    #back2{
+        background-position-y: 4770px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .card_SejaV-Doe{
+        width: 100%;
+    }
+
+    .cards {
+        margin: 30px 0;
+    }
+
+    .card_foto{
+        height: auto;
+        width: 300px;
+        margin: 0 auto;
+    }
+    
+    .card_foto img{
+        width: 100%;
+    }
+
+    .foto-texto{
+        right: 0%;
+        width: 300px;
+    }
+
+    .foto-texto h1 {
+        font-size: 25px;
+    }
+    
+    .foto-texto p {
+        font-size: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .foto-texto button {
+        padding: 10px 40px;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+    }
+
+    .faixa{
+        height: 250px;
+    }
+
+    .loja_item img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .loja_item{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .item-texto a{
+        padding: 20px 40px;
+    }
+
+    #back1{
+        background-image: none;
+    }
+
+    #back2{
+        background-image: none;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .loja_item figure{
+        margin: 0;
+    }
+
+    .loja_item img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .item-texto {
+        font-size: smaller;
+    }
+    
+    .item-texto p {
+        margin-bottom: 20px;
+    }
+    
+    .item-texto a {
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+}

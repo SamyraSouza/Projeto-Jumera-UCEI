@@ -1,0 +1,197 @@
+/* Título Doação e texto*/
+ body{
+    width: 100%;
+ }
+
+.doetitulo {
+    font-family: "Inter";
+    align-items: center;
+    color: #381639;
+    text-align: center;
+    margin-top: 150px;
+    text-decoration: none;
+    }
+    .doetexto{
+        font-family: "Inter";
+        align-items: center;
+        color: #55795d;
+        text-align: center;
+        font-size: 20px;
+    }
+    .gatoCa{
+        margin-top: 170px;
+        margin-bottom: 110px;
+        display: flex;
+        justify-content: center;
+        background: linear-gradient(75deg, #b0c59a81 1%, #555f4a81 99%);
+        height: 250px;
+        align-items: end;
+    }
+    .gatoecachorro{
+        display: flex;
+        align-items: end;
+    }
+   
+.texto {
+    font-family: "Inter";
+    font-size: 25px;
+    padding:10px;
+    font-weight: 300;
+    line-height: 30px;
+    text-align: center;
+}
+
+.kit_texto{
+margin-left: 3%;
+margin-right: 3%;
+margin-top: 30px;
+font-weight: 600;
+font-size: 20px;
+font-family: "Inter";
+justify-content: space-evenly;
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+gap: 30px;
+align-items: center;
+color: #381639;
+}
+.kit_texto p{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.valores_kit{
+    width: 100%;
+    font-size: 32px;
+    font-weight: 900;
+   color: #fff;
+}
+.titulo_kit{
+    font-weight: 900;
+    text-decoration: none;
+}
+.kit_doe1 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1%;
+    height: 300px;
+    width: 30%;
+    background-color: #cdaece;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0px rgba(147, 104, 180, 0.5);
+    justify-content: space-evenly;
+}
+.doekit {
+    font-size: 25px;
+    white-space: nowrap;
+    padding: 10px 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: #381639;
+    transition: all .3s ease; 
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.doekit:hover {
+    background-color: white;
+}
+.doekit:hover  {
+    color: #381639;
+}
+
+.doekit_outros {
+    height: 60px;
+    border: none;
+    white-space: nowrap;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #381639;
+    transition: all .1s ease; 
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.doekit_outros:hover {
+    background-color: white;
+}
+.doekit_outros:hover  {
+    color: #381639;
+}
+
+.outros_valores{
+    font-family: "Inter";
+    font-size: 24px;
+    color: #623C63;
+justify-content: space-evenly;
+flex-wrap: wrap;
+align-items: center;
+   display: flex;
+   margin-top: 70px;
+   margin-bottom: 70px;
+}
+.pix{
+    text-align: center;
+}
+.container_doistextos{
+width: 100%;
+height: 100vw;
+background: url(../imagens/img-doe/doistextos.jpeg);
+background-size: cover;
+}
+
+.container_realidade{
+    width: 100%;
+    height: 100vw;
+    background: url(../imagens/img-doe/realidade.jpeg);
+    background-size: cover;
+}
+
+.img-dois_textos{
+
+    width: 100%;
+    background-position: center;
+    background-position:100% 0%;
+    background-size: cover;
+}
+
+@media (max-width: 930px){
+    .kit_doe1 {
+        width: 45%;
+    }
+}
+@media (max-width: 650px){
+    .gatoCa{
+        margin-top: 100px;
+        height: 150px;
+    }
+    .gatoecachorro img{
+        width: 400px;
+    }
+}
+
+@media (max-width: 550px){
+    .kit_doe1 {
+        width: 100%;
+    }
+}
+@media (max-width: 430px){
+    .gatoCa{
+        height: 90px;
+    }
+    .gatoecachorro img{
+        width: 300px;
+    }
+}
+
+   

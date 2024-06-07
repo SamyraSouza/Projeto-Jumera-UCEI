@@ -1,0 +1,147 @@
+body{
+    padding: 0px;
+    margin: auto;
+    background-color: white;
+    font-family: "Inter", sans-serif;;
+}
+/* Cabeçalho Adoção */
+.main-adocao{
+    background-image: url(../imagens/img-adocao/detalhe1.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+}
+.titulo-adocao{
+    color: black;
+    text-align: center; 
+}
+.titulo-adocao h1{
+    font-size: 96px;
+    font-weight: bolder;
+    margin-bottom: 0px
+}
+.titulo-adocao h2{
+    font-size: 64px;
+    font-weight: bolder;
+    margin-top: 0px;
+}
+.menu-adocao{
+    list-style: none;
+    font-size: 40px;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+}
+.menu-adocao li a{ 
+    display: block;
+    border: 2px solid #381639;
+    color: #381639;
+    padding: 10px 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.menu-adocao li a:hover{
+    background-color: #381639;
+    color: white;
+    transition: 0.3s;
+}
+.menu-adocao a.cachorros{
+    background-color: #381639;
+    color: white;
+}
+
+/* Corpo Adoção */
+.corpo-adocao{
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: center;
+    background-image: url(../imagens/img-adocao/detalhe2.svg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    padding-bottom: 50px;
+}
+.corpo-adocao div.adote{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #CAD9C9;
+    border-radius: 15px;
+    width: 20%;
+    margin: 40px;
+}
+.corpo-adocao div.adote img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+.corpo-adocao div.adote h3{
+    padding-inline-start: 50px;
+    font-size: 15pt;
+}
+.corpo-adocao div.adote span.txt-adote{
+    width: 80%;
+    margin: 0px auto;
+}
+.corpo-adocao div.adote span.txt-adote p{
+    text-align: justify;
+    margin-top: 0px;
+}
+.corpo-adocao div.adote span.txt-adote a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: #456352;
+    border-radius: 10px;
+    font-size: 15pt;
+    margin: 20px auto;
+    padding: 5px;
+    width: 100px;
+}
+.corpo-adocao div.adote span.txt-adote a.link-adocao-adote{
+    background-color: #618470;
+}
+.corpo-adocao div.adote span.txt-adote a.link-adocao-apadrinhe{
+    background-color: #2d483a;
+}
+
+@media (max-width: 1000px){
+    .menu-adocao{
+        display: none;
+    }
+    .menu-adocao li{
+        margin: 20px 0px;
+    }
+    .mobile-menu li.item-adocao a{
+        color: #68bd84;
+    }
+    .mobile-menu li.item-adocao a:hover{
+        border-bottom: 2px solid #68bd84;
+    }
+    .corpo-adocao div.adote{
+        width: 30%;
+    }
+    .corpo-adocao div.adote img{
+        width: 150px;
+        height: 150px;
+    }
+    #text2{
+        padding: 0% 25%;
+    }
+}
+@media (min-width: 320px) and (max-width: 840px){
+    .titulo-adocao h1{
+        font-size: 40px;
+    }
+    .titulo-adocao h2{
+        font-size: 20px;
+    }
+    .corpo-adocao div.adote{
+        width: 45%;
+        margin: 10px;
+    }
+}

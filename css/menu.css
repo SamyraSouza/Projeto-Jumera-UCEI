@@ -1,0 +1,434 @@
+body{
+    margin: 0;
+}
+
+.imgmenu {
+    display: flex;  
+    flex-wrap: wrap;
+    cursor: pointer;
+    width: 100%;
+}
+.imgmenu a{
+    width: 50%;
+}
+/*************************************************/
+/*Menu com foto do coelho "Resgates*/
+
+.coelhoMenu {
+    position: relative;
+    background: rgba(0, 0, 0, 0.767);
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+    transition: all .2s ease;
+}
+.coelhoMenu img{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+.coelhoMenu:hover{
+    box-shadow: 20px 0px 20px black;
+    background: rgba(0, 0, 0, 0);
+}
+.coelhoMenu:hover img{
+    transform: scale(1.1);
+}
+.titulocoelho{
+    position: absolute;
+    left: 47px;
+    top: 420px;
+    transition: all 1s ease;
+}   
+.titulocoelho h1{
+    margin: 0;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    transition: all 1s ease;
+}
+.coelhoMenu:hover .titulocoelho{
+    padding: 10px;
+     top: 410px;
+     left: 37px;
+     background-color: white;
+     border-radius: 20px;
+}
+.coelhoMenu:hover h1{
+    color: #381639; 
+}
+
+/*************************************************/
+/*Menu com foto do cachorro "Adote ou Apadrinhe*/
+
+.cachorroMenu {
+    position: relative;
+    background: rgba(0, 0, 0, 0.767);
+    height: 500px;
+    overflow: hidden;
+    width: 100%;
+    transition: all .2s ease;
+}
+.cachorroMenu img{
+    position: relative;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+}
+.cachorroMenu:hover{ 
+    box-shadow: -20px 0px 20px black;
+    background: rgba(0, 0, 0, 0);
+}
+.cachorroMenu:hover img{  
+    transform: scale(1.1);
+}
+.titulocachorro{
+    white-space: nowrap;
+    position: absolute;
+    left: 47px;
+    top: 420px;
+    transition: all 1s ease;
+}   
+.titulocachorro h1{
+    margin: 0;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    transition: all 1s ease;
+}
+.cachorroMenu:hover .titulocachorro{
+    padding: 10px;
+     top: 410px;
+     left: 37px;
+     background-color: white;
+     border-radius: 20px;
+}
+.cachorroMenu:hover h1{
+    color: #381639; 
+}
+
+/*************************************************/
+/*******************Navegador*********************/
+
+header {
+    font-family: "Inter", sans-serif;
+    background-color: #381639;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center; 
+}
+
+.nav-list ul {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 60px;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+.nav-link:hover{
+    padding-bottom: 3px;
+    transition: 20ms;
+    border-bottom: 2px solid white;   
+}
+
+.botdoe button {
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-right: 10px;
+    border: 2px solid white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: #381639;
+    transition: all .5s ease; 
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.botdoe:hover button {
+    background-color: white;
+}
+.botdoe:hover button {
+    color: #381639;
+}
+.mobile-menu-icon{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+/*************************************************/
+/* Rodape*/
+footer{
+    font-family: "Inter", sans-serif;
+    background-color: #381639;
+    width: 100%;
+    height: 450px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.titAte{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.rodape{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+#text1{
+    white-space: nowrap;
+    width: 25%;
+}
+/* DIV links*/
+
+#text1 a:hover{
+    color: lightgray;
+}
+
+/* DIV Texto desc. Empresa*/
+#text2{
+    width: 25%;
+    text-align: center;
+}
+
+/* Atendimento*/
+#at{
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Links e-mail e Instagram */
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+/* Borda de Baixo*/
+#b-b{
+    border-bottom: 2px rgb(255, 255, 255) solid;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px; 
+    margin-bottom: 50px;
+}
+
+
+/* Icones*/
+.heroicons-outline--mail {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    vertical-align: sub;
+  }
+  .mdi--instagram {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    vertical-align: sub;
+  }
+
+
+
+
+
+
+
+
+
+
+/*************************************************/
+/*******************Navegador tela pequena*********************/
+
+@media screen and (max-width: 1000px){
+
+/*************************************************/
+/*Menu com foto do coelho "Resgates*/
+    .imgmenu a{
+        width: 100%;
+    }  
+
+    .coelhoMenu {
+        height: 400px;
+    } 
+    .titulocoelho{
+        top: 340px;
+    }
+    .coelhoMenu:hover .titulocoelho{
+        top: 330px;
+    }
+    .titulocoelho h1{
+
+        font-weight: 600;
+    }
+
+/*************************************************/
+/*Menu com foto do cachorro "Adote ou Apadrinhe*/
+
+    .cachorroMenu {
+        height: 400px;
+    }
+    .titulocachorro{
+        top: 340px;
+    }
+    .cachorroMenu:hover .titulocachorro{
+        top: 330px;
+    }
+    .titulocachorro h1{
+        font-weight: 600;
+    }
+
+/*************************************************/
+/*******************Navegador*********************/
+    .logo {
+        width: 60px;
+        height: 60px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .nav-bar{
+        padding: 1.5rem 4rem;
+    }
+    .navItem{
+        display: none;
+    }
+    .botdoe{
+        display: none;
+    }
+    .mobile-menu-icon{
+        display: block;
+    }
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .navItem {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .botdoe {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .botdoe button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+
+/*************************************************/
+/*******************Rodapé*********************/
+#text1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+#text1 p{
+    margin-bottom: 0;
+}
+footer{
+    justify-content: center;
+}
+.rodape{
+    gap: 30px;
+}
+#text2{
+    width: 100%;
+}
+#b-b{
+    display: none;
+}
+}
+/******************************/
+/* Arrumar título menu*/
+@media screen and (max-width: 450px){
+    .coelhoMenu{
+        height: 250px;
+    }
+    .titulocoelho{
+        margin-top: -150px;
+    }
+    .titulocoelho h1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .cachorroMenu{
+        height: 250px;
+    }
+    .titulocachorro{
+        margin-top: -150px;
+    }
+    .titulocachorro h1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+}

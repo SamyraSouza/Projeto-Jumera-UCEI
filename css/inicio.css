@@ -1,0 +1,711 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/*Primeiro carrossel*/
+.fundoCarro{
+    padding: 3%;
+    background-image: url(../imagens/img-inicio/backCarrossel.png);
+    background-size: cover;
+}
+.slideshow-container {
+    max-width: 570px;
+    position: relative;
+    margin: auto;
+  }
+  .resg, .res{
+      width:100%; 
+      height: 625px;
+  }
+  
+  .mySlides, .mySlide {
+    display: none;
+  }
+  
+  .prev,.pre,.next, .nex {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius: 180px;
+    color: white;
+    background-color: #381639;
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    user-select: none;
+  }
+  .prev{
+      left: -90px;
+  }
+  .next{
+    right: -90px;
+  }
+  
+  .dot, .dop{
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbbbbb00;
+    border: 2px solid #381639;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #381639;
+  }
+
+  
+  .fade,.fad {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/*Três cards*/
+.info-cards{
+  display: flex;
+  font-family: "Inter";
+  width: 100%;
+  height: 600px;
+}
+
+.card{
+  position: relative;
+  width: 34%;
+  height: 600px;
+  transition: 2s ease;
+}
+
+#card1{
+  background:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url(../imagens/img-inicio/foto1.png)
+  no-repeat center center;
+  background-size: cover;
+}
+
+#card2{
+  background:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url(../imagens/img-inicio/foto2.png)
+  no-repeat bottom left;
+  background-size: cover;
+  
+}
+
+#card3{
+  background:
+  linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+  url(../imagens/img-inicio/foto3.png)
+  no-repeat center center;
+  background-size: cover;
+}
+
+.info-card_texto{
+  color: #fff;
+  text-align: center;
+  width: 250px;
+  height: 240px;
+  position: absolute;
+  bottom: 10%;
+  left: 30%;
+}
+
+.info-card_texto h2{
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.info-card_texto p{
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+
+.SaibaMais{
+  border-radius: 60px;
+  text-decoration: none;
+  padding: 15px;
+  background-color: #456352;
+  color: #fff;
+  margin-bottom: 30px;
+  font-weight: 400;
+  transition: 500ms;
+}
+
+.SaibaMais:hover{
+  background-color: #59866e;
+}
+
+#card1:hover{
+  background:
+  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  url(../imagens/img-inicio/foto1.png)
+  no-repeat center center;
+  background-size: cover;
+}
+
+#card2:hover{
+  background:
+  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  url(../imagens/img-inicio/foto2.png)
+  no-repeat bottom center;
+  background-size: cover;
+}
+
+#card3:hover{
+  background:
+  linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+  url(../imagens/img-inicio/foto3.png)
+  no-repeat center center;
+  background-size: cover;
+}
+
+.card:hover .SaibaMais:not(:hover){
+  background-color: #62a080;
+}
+
+/*Carroussel 2*/
+.pre{
+  left: -60px;
+}
+.nex{
+right: -60px;
+}
+.adocao{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    padding: 5%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    background-color: #E7E2E6;
+}
+.adocao h1{
+    color:#381639;
+    font-size: 40px;
+    font-weight: 900;
+}
+.adocao p{
+    font-size: 24px;
+    color: #434243;
+}
+.importancia{
+    padding-right: 5%;
+    width: 45%;
+}
+.importancia a{
+    transition: .2s;
+    color:#381639;
+}
+.importancia a:hover{
+    color: #2F503D;
+}
+
+  @keyframes fad {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /*Doe*/
+  .gatoCa{
+    margin-top: 100px;
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(75deg, #b0c59a81 1%, #555f4a81 99%);
+    height: 250px;
+    align-items: end;
+}
+.gatoecachorro{
+    display: flex;
+    align-items: end;
+}
+
+  /* Ajude-nos */
+.ajudenos{
+  background-image: url(../imagens/img-inicio/fundo-ajudenos.png);
+  background-repeat: no-repeat;
+  background-size: 1200px;
+  background-position: center;
+  font-family: "Inter", sans-serif;
+  padding: 200px;
+}
+.ajudenos hgroup h1{
+  font-size: 80px;
+  text-align: center;
+  color: #2F503D;
+}
+.ajudenos span.txt-ajudenos{
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+.ajudenos span.txt-ajudenos p{
+  font-size: 25px;
+  text-align: center;
+  margin: 0px;
+}
+.ajudenos span.txt-ajudenos span.seta-ajudenos{
+  display: flex;
+}
+.ajudenos span.txt-ajudenos span.seta-ajudenos p{
+  display: flex;
+  align-content: center;
+}
+.ajudenos span.txt-ajudenos span.seta-ajudenos p a{
+  align-self: center;
+  font-size: 80px;
+  color: #2F503D;
+  border: 2px solid #2F503D;
+  padding: 0px 50px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.ajudenos span.txt-ajudenos span.seta-ajudenos p a:hover{
+  background-color: #2F503D;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+/*Redes socias*/
+.redes{
+    justify-content: center;
+    background: linear-gradient(90deg, #623C63, #d6a2cb);
+    height: 800px;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tituloredes{
+    padding-top: 20px;
+    text-align: center;
+    width: 50%;
+  }
+  .tituloredes h2{
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    font-weight: 800;
+  }
+  .imgredes{
+    height: 80%;
+    width: 600px;
+  }
+  .imgredes img{
+    width: 100%;
+    height: 100%;
+  }
+/*Quem somos*/
+
+/* Cabeçalho Adoção */
+.main-quem_somos{
+  padding: 0px;
+  margin: auto;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  background-image: url(../imagens/img-inicio/detalhe1.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  margin-top: -25px;
+  padding-top: 100px;
+}
+#header-quem_somos h1{
+  font-size: 70px;
+  font-weight: bolder;
+  margin-bottom: 0px;
+  color: #381639;
+  text-align: center; 
+  margin-bottom: 60px;
+}
+/* Corpo Adoção */
+.corpo-quem_somos{
+  display: flex;
+  flex-wrap: wrap;    
+  justify-content: center;
+  background-image: url(../imagens/img-inicio/detalhe2.svg);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  padding-bottom: 50px;
+}
+.corpo-quem_somos div.card-quem_somos{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20%;
+  margin: 40px;
+}
+.corpo-quem_somos div.card-quem_somos img{
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin: 20px auto;
+}
+.corpo-quem_somos div.card-quem_somos h3{
+  font-size: 15pt;
+  text-align: center;
+}
+.corpo-quem_somos div.card-quem_somos span.txt-card-quem_somos{
+  width: 80%;
+  margin: 0px auto;
+}
+.corpo-quem_somos div.card-quem_somos span.txt-card-quem_somos p{
+  text-align: center;
+  margin-top: 0px;
+}
+.doacaogc{
+  font-family: "Inter";
+}
+
+.doacao-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+}
+
+.doacao-titulo h2{
+  color: #381639;
+  font-weight: bolder;
+  font-size: 50px;
+  width: 400px;
+  text-align: center;
+  margin: 30px 10px;
+}
+
+.doacao-texto2{
+  margin: 40px 0px 0px;
+  width: 400px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.doacao-texto2_btn button{
+  white-space: nowrap;
+  margin-left: 20px;
+  margin-right: 10px;
+  border: 2px solid #381639;
+  background-color: white;
+  padding: 20px 20px;
+  border-radius: 5px;
+  color: #381639;
+  transition: all .5s ease; 
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+  /*Três cards*/
+  
+@media (min-width: 2000px){
+  .info-card_texto{
+      left: 35%;
+  }
+}
+
+  @media screen and (max-width: 1210px){
+    .redes{
+      height: 900px;
+    }
+    .imgredes{
+      height: 60%;
+    }
+    .redes h2{
+        font-size: 50px;
+      }
+        /*Carrossel 2*/
+      .importancia{
+        padding: 1%;
+        width: 100%;
+      }
+      .carro2{
+        margin-top: 2%;
+      }
+      .adocao h1{
+        font-size: 30px;
+      }
+      .adocao p{
+        font-size: 20px;
+      }
+      .doacao-titulo h2{
+        font-weight: bolder;
+        font-size: 40px;
+        width: 300px;
+    }
+
+    .doacao-texto2{
+        width: 350px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .doacao-texto2_btn button{
+        white-space: nowrap;
+        margin-left: 20px;
+        padding: 20px 20px;
+    }
+      /*Nos siga nas redes*/
+      .card{
+        width: 100%;
+    }
+    .info-card_texto{
+        left: 22%;
+        width: 200px;
+        height: 300px;
+    }
+  }
+  /*Quem somos*/
+  @media (max-width: 1000px){
+    .corpo-quem_somos div.card-quem_somos{
+        width: 30%;
+    }
+    .corpo-quem_somos div.card-quem_somos img{
+        width: 150px;
+        height: 150px;
+    }
+}
+  @media screen and (max-width: 900px){
+    /*Carrossel*/
+    .slideshow-container {
+        width: 80%;
+    }
+    .resg, .res{
+        height: 400px;
+    }
+    .prev, .pre{
+        font-size: 15px;
+        width: 40px;
+        height: 40px;
+        left: 0px;
+    }
+    .next, .nex {
+        font-size: 15px;
+        width: 40px;
+        height: 40px;
+        right: 0px;
+    }
+}
+
+/*Quem somos*/
+@media (min-width: 320px) and (max-width: 840px){
+  #header-quem_somos h1{
+      font-size: 40px;
+  }
+  .corpo-quem_somos div.card-quem_somos{
+      width: 45%;
+      margin: 10px;
+  }
+  .corpo-quem_somos div.card-quem_somos img{
+      width: 100px;
+      height: 100px;
+      margin: 15px auto;
+  }
+  .corpo-quem_somos div.card-quem_somos h3{
+      padding-inline-start: 30px;
+      margin: 0px;
+      font-size: 15px;
+  }
+  .corpo-quem_somos div.card-quem_somos span.txt-card-quem_somos p{
+      font-size: 10px;
+  }
+    /* Ajude-nos */
+    .ajudenos{
+      background-size: 900px;
+    }
+    .ajudenos hgroup h1{
+      font-size: 60px;
+    }
+    .ajudenos span.txt-ajudenos p{
+      font-size: 20px;
+    }
+    .ajudenos span.txt-ajudenos span.seta-ajudenos p a{
+        font-size: 50px;
+    }
+}
+
+/*Três cards*/
+@media (max-width: 800px){
+  .info-cards{
+      display: inline-block;
+      height: 1200px;
+  }
+  .card{
+      width: 100%;
+      height: 400px;
+  }
+  .info-card_texto{
+      left: 38%;
+      bottom: 10%;
+  }
+    /* Ajude-nos */
+    .ajudenos{
+      padding: 60px;
+    }
+    .ajudenos span.txt-ajudenos{
+      flex-direction: column;
+      justify-content: center;
+    }
+    .ajudenos span.txt-ajudenos span.seta-ajudenos p{
+      justify-self: center;
+      margin: 30px auto;
+    }
+    .doacao-flex{
+      display: flex;
+      align-items: center;
+  }
+  
+  .doacao-titulo h2{
+      font-weight: bolder;
+      font-size: 35px;
+      width: 200px;
+  }
+
+  .doacao-texto2{
+      width: 250px;
+      text-align: center;
+      font-size: 20px;
+  }
+
+  .doacao-texto2_btn button{
+      white-space: nowrap;
+      margin-left: 20px;
+      margin-right: 10px;
+      padding: 20px 20px;
+  }
+
+}
+/*Nos siga nas redes*/
+@media screen and (max-width: 685px){
+    .redes{
+        height: 750px;
+      }
+      .redes h2{
+        font-size: 45px;
+      }
+      .imgredes{
+        width: 400px;
+        height: auto;
+      }
+      .redes h2{
+        font-size: 45px;
+      }
+}
+@media (max-width: 650px){
+  .gatoCa{
+      margin-top: 100px;
+      height: 150px;
+  }
+  .gatoecachorro img{
+      width: 400px;
+  }
+}
+
+@media (max-width: 550px){
+  .kit_doe1 {
+      width: 100%;
+  }
+}
+@media screen and (max-width: 500px){
+      /*Carrossel*/
+    .slideshow-container {
+        width: 100%;
+    }
+    .dot{
+        border: 2px solid #ffffff;
+    }
+    .resg, .res{
+        height: 400px;
+    }
+    .doacao-flex{
+      display: flex;
+      align-items: center;
+  }
+  
+  .doacao-titulo h2{
+      font-weight: bolder;
+      font-size: 25px;
+      width: 150px;
+  }
+
+  .doacao-texto2{
+      width: 200px;
+      text-align: center;
+      font-size: 15px;
+      margin-right: 25px;
+  }
+
+  .doacao-texto2_btn button{
+      white-space: nowrap;
+      margin-right: 20px;
+      padding: 10px 5px;
+      font-size: small;
+  }
+    /*Três cards*/
+    .info-card_texto{
+      left: 30%;
+  }
+}
+
+/*Nos siga nas redes*/
+@media screen and (max-width: 430px){
+    .redes h2{
+      font-size: 25px;
+    }
+    .imgredes{
+      width: 350px;
+    }
+    .gatoCa{
+      height: 90px;
+  }
+  .gatoecachorro img{
+      width: 300px;
+  }
+        /* Ajude-nos */
+  .ajudenos{
+    padding: 40px;
+    background-size: 600px;
+  }
+  }
+
+  /*três cards*/
+  @media (max-width: 400px){
+    .info-card_texto{
+        width: 170px;
+    }
+}
+
+  
+@media screen and (max-width: 350px){
+    .redes{
+      height: 500px;
+    }
+    .redes h2{
+      font-size: 24px;
+    }
+    .imgredes{
+      width: 250px;
+    }
+    .info-card_texto{
+      left: 25%;
+  }
+     /* Ajude-nos */
+     .ajudenos{
+      padding: 40px;
+      background-size: 500px;
+    }
+    .ajudenos hgroup h1{
+      font-size: 50px;
+    }
+  }

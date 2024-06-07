@@ -1,0 +1,170 @@
+.nossaHistoria{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    align-items: top;
+    padding: 10%;
+    justify-content: space-between;
+    background: url(../imagens/img-historia/historiaBack.png);
+    background-size: cover;
+}
+.nossaHistoria h1{
+    font-size: 100px;
+    font-weight: 100;
+    width: 50%;
+}
+.nossaHistoria p{
+    font-size: 32px;
+    width: 50%;
+    text-align: center;
+}
+
+.imgFundador{
+    width: 100%;
+    height: 70vw;
+    background: url(../imagens/img-historia/fundador.png);
+    background-size: cover;
+}
+.jornal{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #B3BAAD;
+    padding: 10% 0;
+}
+.imgJornal{
+    width: 45%;
+    height: auto;
+}
+.imgJornal img{
+    width: 100%;
+    height: 100%;
+}
+.textoJornal{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    font-family: "Inter", sans-serif;
+}
+.textoJornal h1{
+    font-size: 96px;
+    color: #395948;
+}
+.textoJornal p{
+    font-size: 26px;
+}
+.reportagem{
+    font-weight: 900;
+}
+.imgs{
+    display: flex;
+    justify-content: space-evenly;
+}
+.imgResg{
+    border-radius: 30px;
+    overflow: hidden;
+}
+.imgResg1{
+    border-radius: 30px;
+    overflow: hidden;
+}
+.resgates{
+    text-align: center;
+    padding: 5%;
+}
+.resgates h1{
+    font-weight: 900;
+    font-family: "Inter", sans-serif;
+    font-size: 96px;
+    color: #395948;
+}
+.resgates p{
+    margin-top: 50px;
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    color: #395948;
+    margin-bottom: 100px;
+}
+.resgates a{
+    font-family: "Inter", sans-serif;
+    color: #395948;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 47px;
+    padding: 20px 50px;
+    border: 1px solid #395948;
+}
+.resgates a:hover{
+    color: white;
+    background-color: #395948;
+    transition: .5s;
+}
+footer{
+    margin-top: 50px;
+}
+@media screen and (max-width: 1300px){
+    .nossaHistoria{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: aliceblue;
+        background-image: none;
+    }
+    .nossaHistoria h1{
+        font-size: 40px;
+        font-weight: 200;
+    }
+    .nossaHistoria p{
+        width: 90%;
+        font-size: 20px;
+    }
+    .jornal{
+        align-items: center;
+    }
+    .imgJornal{
+        width: 30%;
+        height: 30%;
+    }
+}
+
+@media screen and (max-width: 1036px){
+    .jornal{
+        flex-direction: column;
+        align-items: center;
+    }
+    .textoJornal{
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        order: 1;
+    }
+    .textoJornal h1{
+        font-size: 50px;
+    }
+    .textoJornal p{
+        font-size: 20px;
+    }
+    .imgJornal{
+        margin-top: 30px;
+        width: 50%;
+        order: 2;
+    }
+    .imgResg{
+       width: 50%;
+       height: auto;
+    }
+    .imgResg img{
+        width: 100%;
+        height: 100%;
+     }
+    .imgResg1{
+        display: none;
+    }
+    .resgates h1{
+        font-size: 50px;
+    }
+    .resgates p{
+        font-size: 20px;
+    }
+    .resgates a{
+        font-size: 20px;
+    }
+}

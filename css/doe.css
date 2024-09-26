@@ -1,7 +1,7 @@
 /* Título Doação e texto*/
- body{
+body {
     width: 100%;
- }
+}
 
 .doetitulo {
     font-family: "Inter";
@@ -10,188 +10,677 @@
     text-align: center;
     margin-top: 150px;
     text-decoration: none;
-    }
-    .doetexto{
-        font-family: "Inter";
-        align-items: center;
-        color: #55795d;
-        text-align: center;
-        font-size: 20px;
-    }
-    .gatoCa{
-        margin-top: 170px;
-        margin-bottom: 110px;
-        display: flex;
-        justify-content: center;
-        background: linear-gradient(75deg, #b0c59a81 1%, #555f4a81 99%);
-        height: 250px;
-        align-items: end;
-    }
-    .gatoecachorro{
-        display: flex;
-        align-items: end;
-    }
-   
+}
+
+.doetexto {
+    font-family: "Inter";
+    align-items: center;
+    color: #55795d;
+    text-align: center;
+    font-size: 20px;
+}
+
+.contGC {
+    margin-top: 205px;
+    margin-bottom: 110px;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(75deg, #b0c59a81 1%, #555f4a81 99%);
+    height: 150px;
+    align-items: end;
+}
+
+.gatoecachorro {
+    display: flex;
+    align-items: end;
+}
+
 .texto {
     font-family: "Inter";
     font-size: 25px;
-    padding:10px;
+    padding: 10px;
     font-weight: 300;
     line-height: 30px;
     text-align: center;
 }
 
-.kit_texto{
-margin-left: 3%;
-margin-right: 3%;
-margin-top: 30px;
-font-weight: 600;
-font-size: 20px;
-font-family: "Inter";
-justify-content: space-evenly;
-display: flex;
-flex-wrap: wrap;
-text-align: center;
-gap: 30px;
-align-items: center;
-color: #381639;
+.kit_doacao {
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Inter";
+    text-align: center;
+    color: #381639;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    max-width: 1270px;
+    row-gap: 140px;
+    column-gap: 250px;
 }
-.kit_texto p{
+
+.kit_doacao p {
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 20px;
 }
-.valores_kit{
+
+.valores_kit {
     width: 100%;
     font-size: 32px;
     font-weight: 900;
-   color: #fff;
+    color: #fff;
 }
-.titulo_kit{
+
+.titulo_kit {
     font-weight: 900;
     text-decoration: none;
 }
+
 .kit_doe1 {
-    justify-content: center;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     padding: 1%;
     height: 300px;
-    width: 30%;
+    width: 500px;
     background-color: #cdaece;
     border-radius: 20px;
     box-shadow: 0 0 20px 0px rgba(147, 104, 180, 0.5);
     justify-content: space-evenly;
 }
-.doekit {
+
+.btn-doekit {
     font-size: 25px;
     white-space: nowrap;
     padding: 10px 50px;
     border-radius: 50px;
     border: none;
     background-color: #381639;
-    transition: all .3s ease; 
+    transition: all .3s ease;
     text-decoration: none;
     color: #fff;
     font-weight: 300;
     cursor: pointer;
 }
 
-.doekit:hover {
+.btn-doekit:hover {
     background-color: white;
-}
-.doekit:hover  {
     color: #381639;
 }
 
 .doekit_outros {
     height: 60px;
+    width: 250px;
+    border: none;
     border: none;
     white-space: nowrap;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 5px 10px;
+    padding: 5px 20px;
     border-radius: 10px;
     background-color: #381639;
-    transition: all .1s ease; 
-    text-decoration: none;
-    color: #fff;
+    transition: all 200ms ease;
+    cursor: pointer;
     font-weight: 300;
     font-size: 20px;
-    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
 }
 
 .doekit_outros:hover {
-    background-color: white;
-}
-.doekit_outros:hover  {
+    background-color: #fff;
     color: #381639;
+    border: 3px solid #381639;
 }
 
-.outros_valores{
-    font-family: "Inter";
-    font-size: 24px;
-    color: #623C63;
-justify-content: space-evenly;
-flex-wrap: wrap;
-align-items: center;
-   display: flex;
-   margin-top: 70px;
-   margin-bottom: 70px;
+.btn_texto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    gap: 500px;
+    margin: 100px auto 80px;
 }
-.pix{
+
+.pix>p {
     text-align: center;
-}
-.container_doistextos{
-width: 100%;
-height: 100vw;
-background: url(../imagens/img-doe/doistextos.jpeg);
-background-size: cover;
+    font-family: "inter";
+    font-size: large;
+    width: 250px;
 }
 
-.container_realidade{
-    width: 100%;
-    height: 100vw;
-    background: url(../imagens/img-doe/realidade.jpeg);
-    background-size: cover;
+#png {
+    background: url(../imagens/img-doe/focinho.png);
+    background-position-x: 1600px;
+    background-position-y: 1350px;
+    background-repeat: no-repeat;
 }
 
-.img-dois_textos{
-
-    width: 100%;
-    background-position: center;
-    background-position:100% 0%;
-    background-size: cover;
+.cont_info-pix {
+    width: 550px;
+    display: flex;
+    justify-content: center;
 }
 
-@media (max-width: 930px){
+.dois-baloes {
+    height: 1125px;
+    display: flex;
+    font-family: "Inter";
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#detalhes {
+    background-image: url(../imagens/img-doe/detalhe-roxo1.png), url(../imagens/img-doe/detalhe-roxo2.png);
+    background-color: rgb(189, 204, 174, 0.15);
+    background-repeat: no-repeat;
+    background-position:
+        top left,
+        bottom right;
+}
+
+.balao1 {
+    width: 50%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    margin-top: 250px;
+    background: url(../imagens/img-doe/gato-balao.png) no-repeat;
+    background-position:
+        bottom left;
+}
+
+.cont1 {
+    background-color: #BDCCAE;
+    border-radius: 50px;
+    width: 500px;
+    padding: 30px;
+    color: #fff;
+    font-size: 26px;
+    margin-left: 263px;
+    margin-bottom: 350px;
+}
+
+.balao2 {
+    width: 50%;
+    height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 350px;
+    background: url(../imagens/img-doe/cachorro-balao.png) no-repeat;
+    background-position:
+        top center;
+    flex-direction: column;
+
+}
+
+.cont2 {
+    background-color: #BDCCAE;
+    border-radius: 50px;
+    width: 400px;
+    padding: 30px;
+    color: #fff;
+    font-size: 26px;
+    margin-top: 190px;
+}
+
+.saibaMais-balao {
+    height: 60px;
+    width: 250px;
+    border: none;
+    white-space: nowrap;
+    padding: 5px 20px;
+    border-radius: 30px;
+    background-color: #381639;
+    transition: all 200ms ease;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.saibaMais-balao:hover {
+    background-color: #89b697;
+    color: #fff;
+    border: 3px solid #657D6E;
+}
+
+
+.balao1 p {
+    margin: 0;
+}
+
+.balao2 p {
+    margin: 0;
+}
+
+.realidade {
+    height: 1125px;
+    background-color: rgb(130, 59, 132, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cont-title {
+    display: flex;
+    justify-content: center;
+}
+
+.title-realidade {
+    text-align: center;
+    color: #381639;
+    font-size: 30px;
+    width: 950px;
+    font-family: "Inter", sans-serif;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+
+.cont-retas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50px;
+    border-spacing: 0px;
+}
+
+.reta1 {
+    width: 494px;
+    height: 120px;
+    border-right: 2px solid #381639;
+}
+
+.reta2 {
+    width: 494px;
+    height: 120px;
+    border-left: 2px solid #381639;
+}
+
+.reta3 {
+    width: 490px;
+    height: 120px;
+    border-top: 4px solid #381639;
+    border-left: 4px solid #381639;
+    border-right: 2px solid #381639;
+}
+
+.reta4 {
+    width: 490px;
+    height: 120px;
+    border-top: 4px solid #381639;
+    border-right: 4px solid #381639;
+    border-left: 2px solid #381639;
+}
+
+.icones {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.icones > figure {
+    margin: 20px 90px;
+}
+
+figure>p {
+    width: 300px;
+    font-size: x-large;
+    color: #381639;
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.cont-mobile_text {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+
+    /* Doação */
+    .kit_doacao {
+        gap: 50px;
+        justify-items: center;
+    }
+
+    .kit_doacao p {
+        margin: 5px 15px;
+    }
+
     .kit_doe1 {
-        width: 45%;
+        width: 320px;
+        height: 250px;
+    }
+
+    .titulo_kit {
+        font-size: large;
+    }
+
+    .valores_kit {
+        font-size: larger;
+    }
+
+    .btn-doekit {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    /* Btn outros valores */
+    .btn_texto {
+        margin: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 290px;
+    }
+
+    /* Dois baloes */
+    .balao1 {
+        margin-top: 100px;
+        background: none;
+        justify-content: center;
+    }
+
+    .balao1 p {
+        font-size: large;
+        line-height: 25px;
+    }
+
+    .cont1 {
+        width: 300px;
+        margin: 0;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .balao2 {
+        margin: 0;
+        background: none;
+        justify-content: inherit;
+        gap: 100px;
+        margin-bottom: 150px;
+    }
+
+    .balao2 p {
+        font-size: large;
+        line-height: 25px;
+    }
+
+    .cont2 {
+        width: 300px;
+        margin: 0;
+        padding: 20px;
+        border-radius: 30px;
+    }
+
+    .saibaMais-balao {
+        padding: 5px 10px;
+        width: 200px;
+    }
+
+    /* Realidade */
+
+    .reta1 {
+        width: 308px;
+        height: 120px;
+    }
+
+    .reta2 {
+        width: 308px;
+        height: 120px;
+    }
+
+    .reta3 {
+        width: 304px;
+        height: 120px;
+    }
+
+    .reta4 {
+        width: 304px;
+        height: 120px;
+    }
+
+    .icones > figure {
+        margin: 20px 30px;
+    }
+
+    figure > img {
+        width: 250px;
+    }
+
+    figure>p {
+        width: 250px;
+        margin: 20px auto;
+        font-size: medium;
+        font-weight: 600;
     }
 }
-@media (max-width: 650px){
-    .gatoCa{
-        margin-top: 100px;
-        height: 150px;
+
+@media (max-width: 780px) {
+
+    /* Doação */
+    .kit_doacao {
+        gap: 25px;
+        margin: 0 auto;
     }
-    .gatoecachorro img{
+
+    /* Btn outros valores */
+    .btn_texto {
+        margin: 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 200px;
+    }
+
+    .doekit_outros {
+        height: 60px;
+        width: 200px;
+        padding: 5px 20px;
+        font-weight: 300;
+        font-size: 18px;
+    }
+
+    .pix {
+        text-align: center;
+        font-family: "inter";
+        font-size: large;
+        width: 250px;
+    }
+
+    /* Realidade */
+    .title-realidade {
+        font-size: 20px;
+        width: auto;
+        margin-top: 100px;
+    }
+
+    .reta1 {
+        width: 258px;
+        height: 120px;
+    }
+
+    .reta2 {
+        width: 258px;
+        height: 120px;
+    }
+
+    .reta3 {
+        width: 254px;
+        height: 120px;
+    }
+
+    .reta4 {
+        width: 254px;
+        height: 120px;
+    }
+
+    .icones>figure {
+        margin: 20px 30px;
+    }
+
+    figure>img {
+        width: 200px;
+    }
+
+    figure>p {
+        width: 200px;
+        margin: 20px auto;
+        font-size: medium;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 550px) {
+
+    /* Img gato e Cachrro */
+    .gatoecachorro > img {
         width: 400px;
     }
-}
 
-@media (max-width: 550px){
+    /* Doação */
+    .kit_doacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+    }
+    
     .kit_doe1 {
-        width: 100%;
+        width: 250px;
+        height: 250px;
     }
-}
-@media (max-width: 430px){
-    .gatoCa{
-        height: 90px;
+
+    .btn-doekit {
+        font-size: 18px;
+        padding: 10px 25px;
     }
-    .gatoecachorro img{
-        width: 300px;
+
+    .texto_kit {
+        font-size: smaller;
+    }
+
+    /* Btn outros valores */
+    .btn_texto {
+        margin: 60px 0;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    /* Dois baloes */
+    #detalhes {
+        display: none;
+    }
+
+    .realidade {
+        height: auto;
+    }
+
+    /* Realidade */
+    .reta1 {
+        width: 150px;
+        height: 80px;
+    }
+
+    .reta2 {
+        width: 150px;
+        height: 80px;
+    }
+
+    .reta3 {
+        width: 146px;
+        height: 80px;
+    }
+
+    .reta4 {
+        width: 146px;
+        height: 80px;
+    }
+
+    .icones > figure {
+        margin: 20px 25px;
+    }
+
+    figure > img {
+        width: 100px;
+    }
+
+    figure > p {
+        width: 100px;
+        margin: 20px auto;
+        font-size: smaller;
+        font-weight: 600;
     }
 }
 
-   
+@media (max-width: 400px) {
+    /* Img gato e Cachrro */
+    .gatoecachorro > img {
+        width: 310px;
+    }
+
+    /* Realidade */
+    .title-realidade {
+        font-size: 18px;
+        width: 300px;
+        margin-top: 100px;
+    }
+
+    .reta1 {
+        width: 100px;
+        height: 50px;
+    }
+
+    .reta2 {
+        width: 100px;
+        height: 50px;
+    }
+
+    .reta3 {
+        width: 96px;
+        height: 50px;
+    }
+
+    .reta4 {
+        width: 96px;
+        height: 50px;
+    }
+
+    .icones{
+        margin-bottom: 15px;
+    }
+
+    .icones > figure {
+        margin: 20px 10px;
+    }
+
+    figure > img {
+        width: 80px;
+    }
+
+    figure > p {
+        display: none;
+    }
+
+    .cont-mobile_text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .mobile-text{
+        width: 250px;
+        font-size: large;
+        color: #381639;
+        font-family: "Inter", sans-serif;
+        text-align: center;
+        font-weight: 600;
+        margin: 15px;        
+    }
+
+    .border-text {
+        width: 150px;
+        border-bottom: 2px solid #381639;
+    }
+}

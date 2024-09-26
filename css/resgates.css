@@ -1,91 +1,100 @@
 /*Links para direcionar os resgates*/
-*{
-    margin: 0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-.links{
-    box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.308);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 70px;
-    padding: 5% 0%;
-    background-image: url(../imagens/img-resgates/Back.png);
-    background-size: cover;
+
+.links {
+  box-shadow: 1px 10px 20px rgba(0, 0, 0, 0.308);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 70px;
+  padding: 5% 0%;
+  background-image: url(../imagens/img-resgates/Back.png);
+  background-size: cover;
 }
-.titlink h1{
+
+.titlink h1 {
   font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 70px;
-    color: #381639;
-    text-align: center;
-    width: 100%;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 70px;
+  color: #381639;
+  text-align: center;
+  width: 100%;
 }
-.titlink{
-    margin-top: 20px;
-    width: 100%;
-    margin-bottom: 30px;
+
+.titlink {
+  margin-top: 20px;
+  width: 100%;
+  margin-bottom: 30px;
 }
-.botlink{
-    width: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
+
+.botlink {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
 }
-.botlink a{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;   
-    width: 198px;
-    height: 53px;
-    white-space: nowrap;
-    text-decoration: none;
-    color: #381639;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    font-weight: 600;
-    border: #381639 3px solid;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.botlink a {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 198px;
+  height: 53px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: #381639;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 600;
+  border: #381639 3px solid;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.botlink a:hover{
-    background-color: #381639;
-    color: #fff;
-    transition: 0.5s;
+
+.botlink a:hover {
+  background-color: #381639;
+  color: #fff;
+  transition: 0.5s;
 }
 
 /*Explicação animais*/
-.expli{
-    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.308);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 10% 1%;
-    background-image: url(../imagens/img-resgates/backExpli.png);
-    background-size: cover; 
+.expli {
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.308);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10% 1%;
+  background-image: url(../imagens/img-resgates/backExpli.png);
+  background-size: cover;
 }
-.center{
-    display: flex;
-    align-items: center;
+
+.center {
+  display: flex;
+  align-items: center;
 }
-.center p{
-    width: 600px;
-    text-align: center;
-    font-family: "Inter", sans-serif;
-    font-size: 24px;
+
+.center p {
+  width: 600px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  line-height: 40px;
 }
 
 /*Carroussel*/
-.carrossel{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5% 10%;
+.carrossel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 10%;
 }
 
 .slideshow-container {
@@ -93,16 +102,22 @@
   position: relative;
   margin: auto;
 }
-.resg, .res{
-    width:100%; 
-    height: 625px;
+
+.resg,
+.res {
+  width: 100%;
+  height: 625px;
 }
 
-.mySlides, .mySlide {
+.mySlides,
+.mySlide {
   display: none;
 }
 
-.prev,.pre,.next, .nex {
+.prev,
+.pre,
+.next,
+.nex {
   cursor: pointer;
   position: absolute;
   display: flex;
@@ -119,14 +134,19 @@
   transition: 0.6s ease;
   user-select: none;
 }
-.prev,.pre{
-    left: -90px;
+
+.prev,
+.pre {
+  left: -90px;
 }
-.next, .nex {
+
+.next,
+.nex {
   right: -90px;
 }
 
-.dot, .dop{
+.dot,
+.dop {
   cursor: pointer;
   height: 15px;
   width: 15px;
@@ -137,34 +157,47 @@
   transition: background-color 0.6s ease;
 }
 
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #381639;
 }
 
-.fade,.fad {
+.fade,
+.fad {
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@keyframes fade{
-  from {opacity: .4}
-  to {opacity: 1}
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 /*Carroussel 2*/
 
 
-.active, .dop:hover {
+.active,
+.dop:hover {
   background-color: #381639;
 }
 
 @keyframes fad {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
 }
 
 /*Redes socias*/
-.redes{
+.redes {
   justify-content: center;
   background: linear-gradient(90deg, #623C63, #d6a2cb);
   height: 800px;
@@ -172,177 +205,218 @@
   display: flex;
   flex-wrap: wrap;
 }
-.tituloredes{
+
+.tituloredes {
   padding-top: 20px;
   text-align: center;
   width: 50%;
 }
-.tituloredes h2{
+
+.tituloredes h2 {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 70px;
   font-weight: 800;
 }
-.imgredes{
+
+.imgredes {
   height: 80%;
   width: 600px;
 }
-.imgredes img{
+
+.imgredes img {
   width: 100%;
   height: 100%;
 }
-.foot{
+
+.foot {
   margin-top: 25px;
 }
-.foote{
+
+.foote {
   margin-top: 15px;
 }
-@media screen and (max-width: 1210px){
-  .redes{
+
+@media screen and (max-width: 1210px) {
+  .redes {
     height: 900px;
   }
-  .imgredes{
+
+  .imgredes {
     height: 60%;
   }
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1100px) {
 
-    /*links*/
-    .links{
-        background-image: url(../imagens/img-resgates/Back-mobile.png);
-        background-repeat: repeat-y;
-        background-size: 100%;
-    }
-    .botlink{
-        gap: 20px;
-        width: 100%;
-    }
+  /*links*/
+  .links {
+    background-image: url(../imagens/img-resgates/Back-mobile.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+  }
 
- /*Explicação animais*/ 
+  .botlink {
+    gap: 20px;
+    width: 100%;
+  }
+
+  /*Explicação animais*/
 
 
-    .expli{
-        padding: 0 30px;
-        height: 400px;
-    }
-    .center{
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-    .center p{
-        width: 100%;
-        text-align: center;
-        font-family: "Inter", sans-serif;
-        font-size: 19px;
-    }
+  .expli {
+    padding: 0 30px;
+    height: 400px;
+  }
 
-    /*Carrossel*/
-    .resg, .res{
-        height: 500px;
-    }
+  .center {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 
-    .redes h2{
-      font-size: 50px;
-    }
-}
-@media screen and (max-width: 685px){
+  .center p {
+    width: 100%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+  }
 
-    /*Carrossel*/
-    .resg, .res{
-        height: 400px;
-    }
-    .prev, .pre{
-        font-size: 15px;
-        width: 40px;
-        height: 40px;
-        left: 0px;
-    }
-    .next, .nex {
-        font-size: 15px;
-        width: 40px;
-        height: 40px;
-         right: 0px;
-    }
-    .dot, .dop {
-        width: 10px;
-        height: 10px;
-    }
-    .redes{
-      height: 750px;
-    }
-    .redes h2{
-      font-size: 45px;
-    }
-    .imgredes{
-      width: 400px;
-      height: auto;
-    }
-    .redes h2{
-      font-size: 45px;
-    }
+  /*Carrossel*/
+  .resg,
+  .res {
+    height: 500px;
+  }
+
+  .redes h2 {
+    font-size: 50px;
+  }
 }
 
+@media screen and (max-width: 1000px) {
 
-@media screen and (max-width: 650px){
+  .center p {
+    line-height: 27px;
+    padding-top: 25px;
+  }
 
-    /*links*/
-    .titlink h1{
-        margin-top: 20px;
-        font-size: 50px;
-        font-size: 44px;
-    }
-    .botlink a{
-        width: 50%;
-        margin-bottom: 20px;
-        font-size: 15px;
-    }
-    .redes h2{
-      font-size: 40px;
-    }
+}
 
-  
-/*Explicação animais*/
+@media screen and (max-width: 685px) {
 
-    .expli{
+  /*Carrossel*/
+  .resg,
+  .res {
+    height: 400px;
+  }
+
+  .prev,
+  .pre {
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    left: 0px;
+  }
+
+  .next,
+  .nex {
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+    right: 0px;
+  }
+
+  .dot,
+  .dop {
+    width: 10px;
+    height: 10px;
+  }
+
+  .redes {
+    height: 750px;
+  }
+
+  .redes h2 {
+    font-size: 45px;
+  }
+
+  .imgredes {
+    width: 400px;
+    height: auto;
+  }
+
+  .redes h2 {
+    font-size: 45px;
+  }
+}
+
+
+@media screen and (max-width: 650px) {
+
+  /*links*/
+  .titlink h1 {
+    margin-top: 20px;
+    font-size: 50px;
+    font-size: 44px;
+  }
+
+  .botlink a {
+    width: 50%;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+
+  .redes h2 {
+    font-size: 40px;
+  }
+
+
+  /*Explicação animais*/
+
+  .expli {
     height: 600px;
-    }
+  }
 
-   .center{
+  .center {
     margin-left: 10px;
     margin-right: 10px;
-   }
-   .center p{
-    padding-top: 80px;
+  }
+
+  .center p {
+    padding-top: 130px;
     font-weight: 400;
-   }
+  }
 }
-@media screen and (max-width: 570px){
-  .redes h2{
+
+@media screen and (max-width: 570px) {
+  .redes h2 {
     font-size: 30px;
   }
 }
 
-@media screen and (max-width: 430px){
-  .redes h2{
+@media screen and (max-width: 430px) {
+  .redes h2 {
     font-size: 25px;
   }
-  .imgredes{
+
+  .imgredes {
     width: 350px;
   }
 }
 
-@media screen and (max-width: 350px){
-  .center p{
+@media screen and (max-width: 350px) {
+  .center p {
     font-size: 14px;
   }
-  .redes{
+
+  .redes {
     height: 400px;
   }
-  .redes h2{
+
+  .redes h2 {
     font-size: 24px;
   }
-  .imgredes{
+
+  .imgredes {
     width: 250px;
   }
 }
